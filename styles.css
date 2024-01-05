@@ -11,6 +11,9 @@ body {
   background-image: url(/img/Weybrooke\ Park.webp);
   background-size: cover;
   height: 100vh;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  overscroll-behavior-y: contain;
 }
 .hero-main-page p {
   background-color: rgba(184, 221, 249, 0.8);
@@ -182,7 +185,6 @@ light blue #C0E1F6
   background-size: cover;
 }
 .main-about-me h1 {
-  margin: 0px;
   font-size: 80px;
 }
 .about-me-h2 {
@@ -318,4 +320,26 @@ textarea {
   padding: 0px;
   text-align: center;
   font-size: 15px;
+}
+.media-scroller2 {
+  margin-bottom: 50px;
+  justify-content: space-evenly;
+}
+/* */
+.media-element2 {
+  display: grid;
+  grid-template-rows: min-content;
+  border-radius: 5px;
+  padding: 15px;
+}
+.media-element2 > img {
+  width: 100%;
+  /*aspect-ratio: 16/9; 
+  object-fit: cover;*/
+}
+.gallery-main {
+  background-color: #eff5f9;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  overscroll-behavior-y: contain;
 }
