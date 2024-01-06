@@ -15,6 +15,7 @@ body {
   background-image: url(/img/Weybrooke\ Park.webp);
   background-size: cover;
   height: 100vh;
+  /* overscroll-behavior-y: contain;   supposed to fix an awful 2px white gap beetween nav and bckgr img for hero section */
 }
 .hero-main-page p {
   background-color: rgba(184, 221, 249, 0.8);
@@ -141,25 +142,6 @@ light blue #C0E1F6
   margin: 10px auto;
 }
 
-/* Small devices (mobile phones, 0 and up) */
-/* No media query since this is the default in Foundation */
-
-/* Medium devices (tablets, 640px and up) */
-@media only screen and (max-width: 640px) {
-  h1 {
-    font-size: 55px;
-  }
-  h2 {
-    font-size: 1.3em;
-  }
-  p {
-    font-size: 15px;
-  }
-  .box-1 img {
-    width: 30%;
-  }
-}
-
 .footer p {
   position: fixed;
   bottom: 0px;
@@ -188,17 +170,17 @@ light blue #C0E1F6
 .main-about-me h1 {
   font-size: 80px;
 }
-.about-me-h2 {
+.main-about-me h2 {
   width: 60%;
   margin: auto;
   background-color: #ffffffa5;
 }
+
 .about-me-info {
   display: flex;
   margin: 50px auto;
   width: 60%;
 }
-
 .about-me-text p {
   padding: 5px;
   font-size: 17px;
@@ -353,4 +335,41 @@ textarea {
 }
 .reviews-main p {
   background-color: #c0e1f68d;
+}
+
+/* Small devices (mobile phones, 0 and up) */
+/* No media query since this is the default in Foundation */
+
+/* Medium devices (tablets, 640px and up) */
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 15px;
+  }
+  .box-1 img {
+    width: 30%;
+  }
+  .main-about-me h1 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .main-about-me h2 {
+    font-size: 15px;
+  }
+  .main-about-me p {
+    font-size: 12px;
+    margin: 5px;
+  }
+  .about-me-img img {
+    width: 100%;
+  }
+  .about-me-info {
+    flex-wrap: wrap;
+    margin: 5px auto;
+  }
 }
