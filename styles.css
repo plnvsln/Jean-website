@@ -80,7 +80,9 @@ light blue #C0E1F6
 .nav > #nav-check {
   display: none;
 }
-
+.active {
+  color: #c8f470 !important;
+}
 @media (max-width: 600px) {
   .nav > .nav-btn {
     display: inline-block;
