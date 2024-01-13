@@ -2,21 +2,25 @@
   box-sizing: border-box;
   font-family: "Diphylleia", serif;
 }
+/* COLOR SCHEME */
+
+:root {
+  --blue-color: #0881a3;
+  --white-color: #fffdfb;
+  --nude-color: #fde9df;
+  --peach-color: #ffd6a4;
+  --footer-bg-color: #c0e1f6;
+}
 
 body {
   margin: 0 auto;
+  background-color: var(--nude-color);
 }
-/* .home-main {
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  overscroll-behavior-y: contain;
-} */
+
 .hero-main-page {
   background-image: url(/img/Weybrooke\ Park.webp);
   background-size: cover;
   height: 100vh;
-
-  /*  supposed to fix an awful 2px white gap beetween nav and bckgr img for hero section */
 }
 .hero-main-page p {
   background-color: rgba(184, 221, 249, 0.8);
@@ -24,11 +28,14 @@ body {
   margin: 50px auto;
   width: 70%;
 }
+.title {
+  font-size: 90px;
+}
 h1 {
   font-family: "Meddon", cursive;
-  font-size: 90px;
+  font-size: 60px;
   text-align: center;
-  margin: 0px auto;
+  margin: 15px auto 0px auto;
   padding-top: 35px;
 }
 h2 {
@@ -39,21 +46,16 @@ p {
   font-size: 20px;
   padding: 50px;
 }
-/* dark blue #4F96D9 
-light blue #C0E1F6
-*/
 .nav {
   top: 0;
   width: 100%;
-  background-color: #4c5f23;
+  background-color: var(--blue-color);
   position: fixed;
   z-index: 1;
 }
-
 .nav > .nav-header {
   display: inline;
 }
-
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
@@ -65,8 +67,6 @@ light blue #C0E1F6
 }
 .nav > .nav-links {
   display: inline;
-  /* float: right; */
-
   font-size: 18px;
 }
 .nav > .nav-links > a {
@@ -75,16 +75,14 @@ light blue #C0E1F6
   text-decoration: none;
   color: #c0e1f6;
 }
-
 .nav > .nav-links > a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 .nav > #nav-check {
   display: none;
 }
 .active {
-  color: #c8f470 !important;
+  color: var(--white-color) !important;
 }
 @media (max-width: 600px) {
   .nav > .nav-btn {
@@ -132,6 +130,7 @@ light blue #C0E1F6
     overflow-y: auto;
   }
 }
+
 .main img {
   width: 50%;
 }
@@ -146,26 +145,15 @@ light blue #C0E1F6
 .box-2 img {
   margin: 10px auto;
 }
-
 .footer p {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  background-color: #c0e1f6;
+  background-color: var(--footer-bg-color);
   padding: 10px;
   font-size: 15px;
   margin-bottom: 0px;
 }
-/* Large devices (desktops, 1024px and up) /
-@media only screen and (min-width: 1024px) { ... }
-
-/* Extra large devices (large desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) { ... }
-*/
-
-/* XXLarge devices (larger desktops, 1440px and up) 
-@media only screen and (min-width: 1440px) { ... }
-*/
 
 /* ABOUT  PAGE*/
 .main-about-me {
@@ -180,7 +168,6 @@ light blue #C0E1F6
   margin: auto;
   background-color: #ffffffa5;
 }
-
 .about-me-info {
   display: flex;
   margin: 50px auto;
@@ -197,6 +184,7 @@ light blue #C0E1F6
 }
 .main-bg {
   background-color: #ffffff86;
+  /* background-color: #0881a3; */
 }
 #order-link {
   border: 2px solid black;
@@ -213,8 +201,9 @@ light blue #C0E1F6
 #order-link:hover {
   cursor: pointer;
   color: #333;
-  background-color: rgb(208, 255, 167);
-  box-shadow: 10px 10px 25px 1px rgb(204, 250, 148);
+  /* background-color: rgb(208, 255, 167); */
+  background-color: var(--white-color);
+  box-shadow: 10px 10px 25px 1px var(--white-color);
 }
 .button {
   margin: 35px 20px 20px;
@@ -243,10 +232,7 @@ light blue #C0E1F6
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0.528);
 }
-.bg-img {
-  background-image: url(/img/com-artwork-bg.webp);
-  background-size: cover;
-}
+
 .contact-btn a {
   border: 2px solid black;
   padding: 15px 20px;
@@ -272,8 +258,7 @@ light blue #C0E1F6
 .media-scroller {
   display: grid;
   grid-auto-flow: column;
-  /* grid-auto-columns: 23%; */
-  grid-template-columns: repeat(20, 300px);
+  grid-auto-columns: 23%;
   gap: 10px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -285,17 +270,16 @@ light blue #C0E1F6
   border-radius: 5px;
   padding: 15px;
   background: #c0e1f64e;
-  animation: scroll 100s linear infinite;
-  /* animation-direction: reverse; */
+  /* animation: scroll 100s linear infinite; */
 }
-@keyframes scroll {
+/* @keyframes scroll {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(-4700px);
   }
-}
+} */
 
 .media-element > img {
   inline-size: 100%;
@@ -322,8 +306,6 @@ light blue #C0E1F6
 }
 .media-element2 > img {
   width: 100%;
-  /*aspect-ratio: 16/9; 
-  object-fit: cover;*/
 }
 
 .gallery-main {
@@ -333,22 +315,52 @@ light blue #C0E1F6
   overscroll-behavior-y: contain;
 }
 /* GALLERY FOR SALE page*/
-
+.gallery-sale-bg {
+  background-color: var(--nude-color);
+}
+.gallery-sale-bg h1 {
+  background-color: var(--peach-color);
+}
 .container {
   display: grid;
-  grid-template: 2 /2;
+  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: 350px;
+  margin: 20px;
 }
+/* .gallery-box {
+  border: 1px solid green;
+} */
+.gallery-box img {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.gallery-box-tall {
+  grid-row: span 2;
+  aspect-ratio: 11/16;
+}
+.gallery-box-sq {
+  aspect-ratio: 1.3/ 1;
+}
+.gallery-box-tree {
+  grid-row: span 2;
+}
+.gallery-sale-bg p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.gallery-sale-bg h1 {
+  margin-top: 50px;
+}
+.accent-text {
+  color: var(--blue-color);
+}
+
 /* REVIEWS PAGE */
 .reviews-main {
-  background-image: url(/img/Abstract\ Japanese\ Maple\ Tree_edited_edit.jpg);
-  background-size: cover;
-  overflow-x: auto;
-  overflow-y: auto;
-  overscroll-behavior-inline: contain;
-  overscroll-behavior-y: contain;
-}
-.reviews-main p {
-  background-color: #c0e1f68d;
+  background-color: var(--nude-color);
 }
 
 /* CONTACT PAGE */
@@ -417,5 +429,8 @@ textarea {
   }
   .contact-btn {
     overflow: visible;
+  }
+  .media-scroller {
+    grid-template-columns: repeat(20, 150px);
   }
 }
