@@ -394,9 +394,16 @@ textarea {
   p {
     font-size: 15px;
   }
-  .box-1 img {
-    width: 30%;
+  /* .main {
+    width: 100%;
   }
+  /* .box-1 img {
+    width: 30%;
+  } */
+  .main img {
+    width: 100%;
+  }
+
   .main-about-me h1 {
     font-size: 40px;
     margin-top: 50px;
