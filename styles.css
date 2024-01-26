@@ -383,7 +383,8 @@ textarea {
 
 /* Medium devices (tablets, 640px and up) */
 @media only screen and (max-width: 640px) {
-  h1 {
+  h1,
+  .title {
     font-size: 50px;
   }
   h2 {
@@ -403,7 +404,7 @@ textarea {
     font-size: 15px;
   }
   .main-about-me p {
-    font-size: 12px;
+    font-size: 16px;
     margin: 5px;
   }
   .about-me-img img {
@@ -412,6 +413,7 @@ textarea {
   .about-me-info {
     flex-wrap: wrap;
     margin: 5px auto;
+    width: 100%;
   }
   .footer {
     margin-top: 60px;
