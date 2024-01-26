@@ -251,6 +251,7 @@ p {
 }
 .contact-btn {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Gallery */
@@ -416,23 +417,24 @@ textarea {
     width: 100%;
   }
   .footer {
-    margin-top: 60px;
+    margin-top: 100px;
   }
   .main-commission-artwork {
     flex-wrap: wrap;
+    width: 100%;
   }
   .main-commission-artwork img {
     width: 100%;
   }
   .hidden {
     display: block;
-    color: rgb(188, 238, 195);
     margin: auto;
   }
-  .contact-btn {
-    overflow: visible;
-  }
-  .media-scroller {
+  .scroller {
     grid-template-columns: repeat(20, 150px);
+  }
+  .media-scroller2 {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
