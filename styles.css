@@ -214,12 +214,17 @@ p {
 .hidden {
   display: none;
 }
-
+.artwork-background {
+  background-image: url(/img/artwork-bckg.jpeg);
+  background-size: cover;
+  height: 100vh;
+}
 .main-commission-artwork {
   display: flex;
   width: 80%;
   margin: auto;
   padding: 100px 50px 50px;
+  background-color: rgba(255, 255, 255, 0.479);
 }
 .main-commission-artwork img {
   height: 30%;
@@ -230,10 +235,11 @@ p {
 .main-commission-artwork p {
   padding: 0px 10px;
   font-size: 18px;
-  background-color: rgba(255, 255, 255, 0.528);
+  /* background-color: rgba(255, 255, 255, 0.528); */
+  background-color: rgba(255, 255, 255, 0.479);
 }
 
-.contact-btn a {
+/* .contact-btn a {
   border: 2px solid black;
   padding: 15px 20px;
   border-radius: 30px;
@@ -248,12 +254,23 @@ p {
   background-color: rgb(208, 255, 167);
   box-shadow: 10px 10px 25px 1px rgb(204, 250, 148);
   cursor: pointer;
-}
-.contact-btn {
+} */
+.contact-area {
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
-
+/* i have 2 div.contact-area on artwork page and contact page */
+.contact-area img {
+  background-color: var(--white-color);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 20px;
+}
+.contact-area img:hover {
+  box-shadow: 30px 20px;
+  color: #d3aaff;
+  background-color: #e3d7f0e4;
+}
 /* Gallery */
 
 .media-scroller {
@@ -377,7 +394,24 @@ p {
 }
 
 /* CONTACT PAGE */
-form {
+.contact-background {
+  background-image: url(/img/contact-bckg.jpeg);
+  background-size: cover;
+  height: 100vh;
+}
+.contact-el a {
+  text-decoration: none;
+  font-size: 2em;
+  color: var(--blue-color);
+}
+.contact-el a:hover {
+  color: #30aed1;
+}
+.contact-main h3 {
+  text-align: center;
+  margin: 40px;
+}
+/* form {
   margin: 50px auto;
   background-color: rgba(255, 255, 255, 0.306);
   display: flex;
@@ -390,7 +424,8 @@ textarea {
   padding: 10px;
   margin: 5px;
   width: 80%;
-}
+} */
+
 /* Small devices (mobile phones, 0 and up) */
 /* No media query since this is the default in Foundation */
 
@@ -435,11 +470,14 @@ textarea {
     margin: 5px auto;
     width: 100%;
   }
-  .footer {
+  .footer-margin {
     margin-top: 100px;
   }
   .footer p {
     font-size: 12px;
+  }
+  .artwork-background {
+    height: max-content;
   }
   .main-commission-artwork {
     flex-wrap: wrap;
@@ -465,5 +503,11 @@ textarea {
   }
   .nobkg {
     background-color: transparent;
+  }
+  .contact-background {
+    background-position: center;
+  }
+  .contact-main a {
+    font-size: 1em;
   }
 }
