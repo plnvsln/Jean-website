@@ -44,6 +44,8 @@ h2 {
 p {
   font-size: 20px;
   padding: 50px;
+  text-align: center;
+  width: 100%;
 }
 .nav {
   top: 0;
@@ -134,6 +136,7 @@ p {
 }
 .box-1 {
   display: flex;
+  justify-content: center;
 }
 .box-2 {
   display: flex;
@@ -541,6 +544,10 @@ textarea {
   }
   .contact-main a {
     font-size: 1em;
+  }
+  .contact-area img {
+    inline-size: 70px;
+    margin: 10px;
   }
 
   .gallery-sale-bg p {
