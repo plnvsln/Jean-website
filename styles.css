@@ -436,6 +436,21 @@ p {
   text-align: center;
   margin: 40px;
 }
+.instagram {
+  text-align: center;
+  margin: auto;
+}
+.instagram img {
+  padding: 10px;
+}
+
+.instagram img:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px;
+  color: #d3aaff;
+  background-color: #e3d7f0e4;
+}
+
 /* form {
   margin: 50px auto;
   background-color: rgba(255, 255, 255, 0.306);
