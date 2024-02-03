@@ -542,6 +542,7 @@ textarea {
   .contact-main a {
     font-size: 1em;
   }
+
   .gallery-sale-bg p {
     width: 100%;
     padding: 70px 10px 20px;
@@ -561,5 +562,13 @@ textarea {
     font-size: 25px;
     margin: auto;
     padding-top: 0px;
+  }
+  .contact-main h3 {
+    margin: 0px;
+  }
+
+  .instagram img {
+    padding: 10px;
+    width: 70px;
   }
 }
