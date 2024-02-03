@@ -3,7 +3,6 @@
   font-family: "Diphylleia", serif;
 }
 /* COLOR SCHEME */
-
 :root {
   --blue-color: #0881a3;
   --white-color: #fffdfb;
@@ -130,7 +129,6 @@ p {
     overflow-y: auto;
   }
 }
-
 .main img {
   width: 50%;
 }
@@ -156,6 +154,7 @@ p {
 }
 
 /* ABOUT  PAGE*/
+
 .main-about-me {
   background-image: url(/img/Dancing\ Fuchsia_edited_edited_edited_edi.jpg);
   background-size: cover;
@@ -184,7 +183,6 @@ p {
 }
 .main-bg {
   background-color: #ffffff86;
-  /* background-color: #0881a3; */
 }
 #order-link {
   border: 2px solid black;
@@ -211,6 +209,7 @@ p {
 }
 
 /*  Commission artwork Page*/
+
 .hidden {
   display: none;
 }
@@ -221,7 +220,7 @@ p {
 }
 .main-commission-artwork {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 80px 50px 30px;
   background-color: rgba(255, 255, 255, 0.479);
@@ -232,30 +231,12 @@ p {
   width: 30%;
   padding: 10px;
 }
-
 .main-commission-artwork p {
-  padding: 0px 10px;
+  padding: 10px 20px;
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0.749);
   border-radius: 5px;
 }
-
-/* .contact-btn a {
-  border: 2px solid black;
-  padding: 15px 20px;
-  border-radius: 30px;
-  font-size: 20px;
-  color: black;
-  background-color: #c0e1f6;
-  text-decoration: none;
-  box-shadow: 10px 10px 25px 1px rgb(129, 119, 119);
-}
-.contact-btn a:hover {
-  color: #333;
-  background-color: rgb(208, 255, 167);
-  box-shadow: 10px 10px 25px 1px rgb(204, 250, 148);
-  cursor: pointer;
-} */
 .contact-area {
   text-align: center;
   padding-bottom: 30px;
@@ -272,6 +253,7 @@ p {
   color: #d3aaff;
   background-color: #e3d7f0e4;
 }
+
 /* Gallery */
 
 .media-scroller {
@@ -299,14 +281,12 @@ p {
     transform: translateX(-4700px);
   }
 } */
-
 .media-element > img {
   inline-size: 100%;
   aspect-ratio: 1/1.3;
   object-fit: cover;
   border-radius: 5px;
 }
-
 .media-element p {
   padding: 0px;
   text-align: center;
@@ -316,7 +296,6 @@ p {
   margin-bottom: 50px;
   justify-content: space-evenly;
 }
-/* */
 .media-element2 {
   display: grid;
   grid-template-rows: min-content;
@@ -326,60 +305,104 @@ p {
 .media-element2 > img {
   width: 100%;
 }
-
 .gallery-main {
   background-color: #eff5f9;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   overscroll-behavior-y: contain;
 }
+
 /* GALLERY FOR SALE page*/
+
 .gallery-sale-bg {
   background-color: var(--nude-color);
 }
 .gallery-sale-bg h1 {
   background-color: var(--peach-color);
+  padding-top: 0px;
 }
-.container {
-  display: grid;
-  /* grid-template-columns: repeat(2, 2fr); */
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  justify-content: center;
-  grid-auto-rows: 350px;
-  margin: 20px;
-}
-.gallery-box {
-  border: 1px solid green;
-}
-.gallery-box img {
-  width: 90%;
-  height: 90%;
-  margin: 0 auto;
-  border-radius: 4px;
-}
-.gallery-box-tall {
-  grid-row: span 2;
-  aspect-ratio: 11/16;
-}
-.gallery-box-sq {
-  aspect-ratio: 1.3/ 1;
-}
-.gallery-box-tree {
-  grid-row: span 2;
+.gallery-sale-bg h2 {
+  margin: 10px;
 }
 .gallery-sale-bg p {
-  width: 80%;
   text-align: center;
-  margin: auto;
-}
-.gallery-sale-bg h1 {
-  margin-top: 50px;
+  padding: 50px 50px 15px;
 }
 .accent-text {
   color: var(--blue-color);
 }
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-auto-rows: 250px;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px 30px;
+}
+.container-animals {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 50%;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 300px;
+  gap: 20px 30px;
+}
+.container img,
+.gallery-box-animals img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.container-jazz > div:first-child {
+  grid-column: 1/2;
+  grid-row: 1 /4;
+}
+.container-jazz > div:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.container-jazz > div:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.container-jazz > div:last-child {
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+.container-abstract > div:first-child {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.container-abstract > div:nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.container-abstract > div:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.container-abstract > div:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.container-abstract > div:last-child {
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+.container-portrait > div:first-child {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.container-portrait > div:last-child {
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
 
 /* REVIEWS PAGE */
+
 .reviews-main {
   background-color: var(--nude-color);
 }
@@ -390,13 +413,12 @@ p {
   text-align: center;
   margin-bottom: 30px;
 }
-
 .bkg {
-  /* background-color: var(--peach-color); */
   background-color: #f7e3c9;
 }
 
 /* CONTACT PAGE */
+
 .contact-background {
   background-image: url(/img/contact-bckg.jpeg);
   background-size: cover;
@@ -430,9 +452,6 @@ textarea {
 } */
 
 /* Small devices (mobile phones, 0 and up) */
-/* No media query since this is the default in Foundation */
-
-/* Medium devices (tablets, 640px and up) */
 @media only screen and (max-width: 640px) {
   h1,
   .title {
@@ -444,12 +463,7 @@ textarea {
   p {
     font-size: 15px;
   }
-  /* .main {
-    width: 100%;
-  }
-  /* .box-1 img {
-    width: 30%;
-  } */
+
   .main img {
     width: 100%;
   }
@@ -512,5 +526,25 @@ textarea {
   }
   .contact-main a {
     font-size: 1em;
+  }
+  .gallery-sale-bg p {
+    width: 100%;
+    padding: 70px 10px 20px;
+  }
+  .container,
+  .container-animals {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-animals {
+    margin-bottom: 50px;
+  }
+  .hidden-mobile {
+    display: none;
+  }
+  .gallery-sale-bg h1 {
+    font-size: 25px;
+    margin: auto;
+    padding-top: 0px;
   }
 }
