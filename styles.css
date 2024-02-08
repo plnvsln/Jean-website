@@ -323,7 +323,7 @@ p {
   background-color: var(--nude-color);
 }
 .gallery-sale-bg h1 {
-  background-color: var(--peach-color);
+  background-color: rgb(185, 139, 139);
   padding-top: 0px;
 }
 .gallery-sale-bg h2 {
