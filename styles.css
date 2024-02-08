@@ -227,7 +227,7 @@ p {
   display: flex;
   width: 90%;
   margin: auto;
-  padding: 80px 50px 30px;
+  padding: 60px 50px 15px;
   background-color: rgba(255, 255, 255, 0.479);
   border-radius: 5px;
 }
@@ -248,10 +248,11 @@ p {
 }
 /* i have 2 div.contact-area on artwork page and contact page */
 .contact-area img {
+  /* width: 70px; */
   background-color: var(--white-color);
   border-radius: 50%;
   padding: 10px;
-  margin: 20px;
+  margin: 10px 20px;
 }
 .contact-area img:hover {
   box-shadow: 30px 20px;
